@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://cmm0n42fcy0wk"]
+
+[ext_resource type="Script" uid="uid://cfeol1vft0rns" path="res://quiz.gd" id="1_kninm"]
+
+[node name="Quiz1" type="CanvasLayer" unique_id=2056608662]
+script = ExtResource("1_kninm")
+
+[node name="Q1" type="Control" parent="." unique_id=637352882]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q1" unique_id=1110547923]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q1" unique_id=1716942565]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 1:"
+
+[node name="Question2" type="Label" parent="Q1" unique_id=1996955312]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "True or False: Suctioning applied removal and insertion."
+autowrap_mode = 2
+
+[node name="Wrong2" type="Button" parent="Q1" unique_id=1876075942]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 328.0
+offset_right = 514.0
+offset_bottom = 478.0
+theme_override_font_sizes/font_size = 32
+text = "TRUE"
+
+[node name="Right" type="Button" parent="Q1" unique_id=1902941638]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 590.0
+offset_top = 331.0
+offset_right = 1056.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 32
+text = "FALSE"
+
+[node name="Q2" type="Control" parent="." unique_id=573148291]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q2" unique_id=661989349]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q2" unique_id=1872677763]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 2:"
+
+[node name="Question2" type="Label" parent="Q2" unique_id=619606502]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "When you do know you’ve inserted the catheter far enough?"
+autowrap_mode = 2
+
+[node name="Wrong" type="Button" parent="Q2" unique_id=95798165]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 300.0
+offset_right = 469.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 32
+text = "Upon auscultation of crackle"
+
+[node name="Wrong3" type="Button" parent="Q2" unique_id=581852800]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 620.0
+offset_top = 301.0
+offset_right = 1086.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 32
+text = "Upon cessation of Rhonchi"
+
+[node name="Right" type="Button" parent="Q2" unique_id=288338544]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 629.0
+offset_top = 475.0
+offset_right = 1095.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 32
+text = "When resistance is met"
+
+[node name="Wrong2" type="Button" parent="Q2" unique_id=1380187294]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 472.0
+offset_right = 482.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 32
+text = "In the presence of dull vibrations upon percussion"
+
+[node name="Q3" type="Control" parent="." unique_id=552996521]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q3" unique_id=701317317]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q3" unique_id=937417909]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 3:"
+
+[node name="Question2" type="Label" parent="Q3" unique_id=240084745]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "Before suctioning the tracheostomy, your assessment reveals the stoma to be pink with a slightly wet appearance. What is the priority nursing action?"
+autowrap_mode = 2
+
+[node name="Wrong" type="Button" parent="Q3" unique_id=1367224526]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 300.0
+offset_right = 469.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 32
+text = "Call the surgeon for an immediate discontinue for suspicion of a fistula formation. "
+
+[node name="Wrong3" type="Button" parent="Q3" unique_id=2032081865]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 620.0
+offset_top = 301.0
+offset_right = 1086.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 32
+text = "Administer the patient’s prescribed diphenhydramine"
+
+[node name="Wrong2" type="Button" parent="Q3" unique_id=129761563]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 472.0
+offset_right = 482.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 32
+text = "Collect a culture of the sputum to determine the risk of infection"
+
+[node name="Right" type="Button" parent="Q3" unique_id=966707413]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 629.0
+offset_top = 475.0
+offset_right = 1095.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 32
+text = "This is a normal appearance of a stoma, proceed with the procedure."
+
+[node name="Results" type="Control" parent="." unique_id=573974686]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Results" unique_id=954475013]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -250.0
+offset_right = 500.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Question 1: Suctioning is only applied upon removal of the catheter because of the risk of trauma to the bronchus
+Question 2: When resistance is met of the patient presents with profuse coughing, this indicates that the catheter has reached the Corina and that advancing any further may cause trauma to the lobes of the lungs
+Question 3: A typical stoma should be pink with little moisture on it. Foul smells would indicate an infection. A widening of the hole "
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="Results" unique_id=862761352]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -91.0
+offset_right = 150.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "START PROCEDURE"
+
+[node name="WaitTimer1" type="Timer" parent="." unique_id=81513090]
+wait_time = 3.0
+one_shot = true
+
+[node name="WaitTimer2" type="Timer" parent="." unique_id=1707503113]
+wait_time = 3.0
+one_shot = true
+
+[node name="WaitTimer3" type="Timer" parent="." unique_id=549914792]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="pressed" from="Q1/Wrong2" to="." method="answer_picked_question1"]
+[connection signal="pressed" from="Q1/Right" to="." method="answer_picked_question1"]
+[connection signal="pressed" from="Q2/Wrong" to="." method="answer_picked_question_2"]
+[connection signal="pressed" from="Q2/Wrong3" to="." method="answer_picked_question_2"]
+[connection signal="pressed" from="Q2/Right" to="." method="answer_picked_question_2"]
+[connection signal="pressed" from="Q2/Wrong2" to="." method="answer_picked_question_2"]
+[connection signal="pressed" from="Q3/Wrong" to="." method="answer_picked_question_3"]
+[connection signal="pressed" from="Q3/Wrong3" to="." method="answer_picked_question_3"]
+[connection signal="pressed" from="Q3/Wrong2" to="." method="answer_picked_question_3"]
+[connection signal="pressed" from="Q3/Right" to="." method="answer_picked_question_3"]
+[connection signal="pressed" from="Results/Button" to="." method="change_scene"]
+[connection signal="timeout" from="WaitTimer1" to="." method="_on_wait_timer_1_timeout"]
+[connection signal="timeout" from="WaitTimer2" to="." method="_on_wait_timer_2_timeout"]
+[connection signal="timeout" from="WaitTimer3" to="." method="_on_wait_timer_3_timeout"]

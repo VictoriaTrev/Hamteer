@@ -2,46 +2,51 @@
 
 [ext_resource type="Script" uid="uid://biigwvi1ii3ra" path="res://scripts/trach_suctioning.gd" id="1_7vslf"]
 [ext_resource type="Script" uid="uid://021qysjg3eed" path="res://scripts/visual_insertion.gd" id="2_7mdem"]
+[ext_resource type="Texture2D" uid="uid://bo5jovkiy74jk" path="res://Assets/bg.png" id="2_g5nom"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="3_7mdem"]
 [ext_resource type="Texture2D" uid="uid://d1fulyoxxgg0y" path="res://icon.svg" id="3_j4qbs"]
+[ext_resource type="AudioStream" uid="uid://bn61gm6qperfm" path="res://Assets/Corina reached.mp3" id="5_j4qbs"]
 
 [sub_resource type="Curve2D" id="Curve2D_g5nom"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1023, 46, 0, 0, 0, 0, 1023, 287)
+"points": PackedVector2Array(0, 0, 0, 0, 1092, 114, 0, 0, 0, 0, 1042, 114, 0, 0, 0, 0, 1038, 115, 0, 0, 0, 0, 1039, 129, 0, 0, 0, 0, 1039, 181)
 }
-point_count = 2
+point_count = 5
 
 [node name="TrachSuctioning" type="Node2D" unique_id=1823721548]
 script = ExtResource("1_7vslf")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1119308965]
-offset_right = 1154.0
-offset_bottom = 644.0
-color = Color(0.6955032, 0.6955031, 0.6955031, 1)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1081352302]
+position = Vector2(593, 321.00003)
+scale = Vector2(0.56995386, 0.56995386)
+texture = ExtResource("2_g5nom")
 
 [node name="VisualInsertion" type="Node" parent="." unique_id=1193466631]
 script = ExtResource("2_7mdem")
 
 [node name="Sprite2D" type="Sprite2D" parent="VisualInsertion" unique_id=1062436571]
-modulate = Color(1, 1, 1, 0.6392157)
-position = Vector2(1024.3291, 171.15573)
-scale = Vector2(-1.6601021, 2.3120358)
-texture = ExtResource("3_j4qbs")
+position = Vector2(1038.0001, 159)
+scale = Vector2(1.5365336, 1.5365336)
+texture = ExtResource("3_7mdem")
+region_enabled = true
+region_rect = Rect2(256, 0, 128, 192)
 
 [node name="WhereTube" type="Path2D" parent="VisualInsertion" unique_id=192230063]
 curve = SubResource("Curve2D_g5nom")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="VisualInsertion/WhereTube" unique_id=1450380240]
-position = Vector2(1023, 46)
-rotation = 1.5707964
+position = Vector2(1092, 114)
+rotation = 3.1415927
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="VisualInsertion/WhereTube/PathFollow2D" unique_id=1355926519]
 modulate = Color(18.892157, 0, 0, 1)
-scale = Vector2(0.16193186, 0.14772786)
+scale = Vector2(0.06780925, 0.061861303)
 texture = ExtResource("3_j4qbs")
 
 [node name="MucusAmount" type="ProgressBar" parent="." unique_id=1452900593]
 modulate = Color(0.10240673, 0.8096158, 0.8055005, 1)
+texture_filter = 2
 offset_left = 31.000004
 offset_top = 29.0
 offset_right = 35.000004
@@ -70,6 +75,25 @@ offset_right = 430.0
 offset_bottom = 257.0
 scale = Vector2(6.3153124, 6.3153124)
 text = "TIMEOUT!"
+
+[node name="CoughingAudio" type="AudioStreamPlayer" parent="." unique_id=1120952895]
+stream = ExtResource("5_j4qbs")
+
+[node name="HandOnPipe" type="Sprite2D" parent="." unique_id=2083634897]
+position = Vector2(824, 416)
+scale = Vector2(3.109375, 3.109375)
+texture = ExtResource("3_7mdem")
+region_enabled = true
+region_rect = Rect2(128, 0, 64, 64)
+
+[node name="Suction" type="Sprite2D" parent="." unique_id=423549527]
+position = Vector2(123, 533)
+scale = Vector2(3.109375, 3.109375)
+texture = ExtResource("3_7mdem")
+hframes = 8
+vframes = 6
+frame = 8
+region_rect = Rect2(128, 0, 64, 64)
 
 [connection signal="patient_hurt" from="." to="." method="_on_patient_hurt"]
 [connection signal="removed_tube" from="." to="." method="_on_removed_tube"]

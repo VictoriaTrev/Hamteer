@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://dnf4spa204sce"]
+
+[ext_resource type="Script" uid="uid://cfeol1vft0rns" path="res://quiz.gd" id="1_6sx77"]
+
+[node name="Quiz2" type="CanvasLayer" unique_id=2056608662]
+script = ExtResource("1_6sx77")
+
+[node name="Q1" type="Control" parent="." unique_id=637352882]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q1" unique_id=1110547923]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q1" unique_id=1716942565]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 1:"
+
+[node name="Question2" type="Label" parent="Q1" unique_id=1996955312]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "How long is each pass of tracheostomy suctioning"
+autowrap_mode = 2
+
+[node name="Wrong2" type="Button" parent="Q1" unique_id=1876075942]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 328.0
+offset_right = 514.0
+offset_bottom = 478.0
+theme_override_font_sizes/font_size = 32
+text = "30-40 seconds"
+
+[node name="Wrong3" type="Button" parent="Q1" unique_id=163546120]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 596.0
+offset_top = 485.0
+offset_right = 1062.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 32
+text = "1 minute"
+
+[node name="Wrong4" type="Button" parent="Q1" unique_id=19459557]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 44.0
+offset_top = 491.0
+offset_right = 510.0
+offset_bottom = 641.0
+theme_override_font_sizes/font_size = 32
+text = "1-5 seconds"
+
+[node name="Right" type="Button" parent="Q1" unique_id=1902941638]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 590.0
+offset_top = 331.0
+offset_right = 1056.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 32
+text = "10-15 seconds"
+
+[node name="Q2" type="Control" parent="." unique_id=573148291]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q2" unique_id=661989349]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q2" unique_id=1872677763]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 2:"
+
+[node name="Question2" type="Label" parent="Q2" unique_id=619606502]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "Upon finishing the first pass of the catheter, there’s viscous mucus occluding the catheter, what step should be taken to remedy this issue. "
+autowrap_mode = 2
+
+[node name="Wrong" type="Button" parent="Q2" unique_id=95798165]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 300.0
+offset_right = 469.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 32
+text = "Replace the catheter"
+
+[node name="Wrong3" type="Button" parent="Q2" unique_id=581852800]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 620.0
+offset_top = 301.0
+offset_right = 1086.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 32
+text = "Milk  the tube to clear the mucus"
+
+[node name="Right" type="Button" parent="Q2" unique_id=288338544]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 629.0
+offset_top = 475.0
+offset_right = 1095.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 32
+text = "Place the tip of the catheter into sterile water and perform suctioning"
+
+[node name="Wrong2" type="Button" parent="Q2" unique_id=1380187294]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 472.0
+offset_right = 482.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 32
+text = "Apply a mucolytic to the catheter tip"
+
+[node name="Q3" type="Control" parent="." unique_id=552996521]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Q3" unique_id=701317317]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+
+[node name="Question" type="Label" parent="Q3" unique_id=937417909]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "Question 3:"
+
+[node name="Question2" type="Label" parent="Q3" unique_id=240084745]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 88.0
+offset_right = 1001.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 32
+text = "Upon finishing the first pass of the catheter, what is the minimum amount of time that the should patient be allowed to rest in between passes. "
+autowrap_mode = 2
+
+[node name="Wrong" type="Button" parent="Q3" unique_id=1367224526]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 300.0
+offset_right = 469.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 32
+text = "The patient needs a minimum of a 2 minutes in between passes"
+
+[node name="Wrong3" type="Button" parent="Q3" unique_id=2032081865]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 620.0
+offset_top = 301.0
+offset_right = 1086.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 32
+text = "Rest in between passes is not indicated  because of the mucosa’s regenerative capabilities"
+
+[node name="Wrong2" type="Button" parent="Q3" unique_id=129761563]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 472.0
+offset_right = 482.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 32
+text = "The patient should receive their prescribed corticosteroid to prevent inflammation on subsequent passes"
+
+[node name="Right" type="Button" parent="Q3" unique_id=966707413]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 0
+offset_left = 629.0
+offset_top = 475.0
+offset_right = 1095.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 32
+text = "The patient should be given 30-40 seconds to rest"
+
+[node name="Results" type="Control" parent="." unique_id=1318999626]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Results" unique_id=765588136]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Question 1: The optimal time is 10-15 to prevent damage while making sure to clear as much mucus as possible. Anything more than 15 introduces the potential for trauma and hypoxia. Anything less risk causing damage through a precipitous removal of the catheter with little removal of mucus. 
+Question 2: You will use the sterile water to clear the catheter while maintain sterility. Milking the tube creates a risk for the introduction of pathogens to the sterile catheter. A mucolytic would not be indicated as it would require an administration to the patient to be effective. Replacing the catheter would require an entire recreation of the sterile field to be effective. 
+Question 3: The patient should be given a minimum of 30-40 seconds to reestablish oxygenation and comfort in between passes. While they may be given more time to ensure comfort, the minimum is still 30-40 seconds. The mucosa cannot regenerate within the estimated time of the procedure, and a corticosteroid is not usually indicated for this procedure unless the patient’s situation indicates the need. "

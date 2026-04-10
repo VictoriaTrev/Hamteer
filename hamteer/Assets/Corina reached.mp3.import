@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bn61gm6qperfm"
+path="res://.godot/imported/Corina reached.mp3-ba4dc1cce27df16b03a6ba8d37ed7039.mp3str"
+
+[deps]
+
+source_file="res://Assets/Corina reached.mp3"
+dest_files=["res://.godot/imported/Corina reached.mp3-ba4dc1cce27df16b03a6ba8d37ed7039.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

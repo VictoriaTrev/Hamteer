@@ -1,4 +1,5 @@
 extends CanvasLayer
+@onready var trach_suctioning: Node2D = $TrachSuctioning
 
 @onready var finish_game_button: Button = $FinishGameButton
 

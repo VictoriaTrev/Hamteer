@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://crgh7d6b5fecm"]
 
+[ext_resource type="Script" uid="uid://ce03e1gel1fys" path="res://scenes/finished.gd" id="1_ebm4h"]
+
 [node name="Finished" type="CanvasLayer" unique_id=1093006673]
+script = ExtResource("1_ebm4h")
 
 [node name="Control" type="Control" parent="." unique_id=735927804]
 layout_mode = 3
@@ -19,7 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.4745098, 0.4745098, 0.4745098, 1)
 
-[node name="Label" type="Label" parent="Control" unique_id=1439094277]
+[node name="OxLabel" type="Label" parent="Control" unique_id=1439094277]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -34,3 +37,13 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(4.1842327, 4.1842327)
 text = "Huzah!"
+
+[node name="SterileLabel" type="Label" parent="Control" unique_id=2123814673]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SuctionLabel" type="Label" parent="Control" unique_id=314455449]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

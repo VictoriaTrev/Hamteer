@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://cyee6ur7clskt"]
+
+[ext_resource type="Script" path="res://intro.gd" id="1_s2ta7"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="2_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://ba4akad34u6e2" path="res://Assets/hamter.png" id="3_0a7ni"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y72e6"]
+atlas = ExtResource("2_7a8ye")
+region = Rect2(255.25919, 188.48907, 195.80667, 132.77155)
+
+[node name="Intro" type="Control" unique_id=1602940662]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s2ta7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=271575957]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=92415976]
+layout_mode = 0
+offset_top = -27.0
+offset_right = 1159.0
+offset_bottom = 633.0
+texture = SubResource("AtlasTexture_y72e6")
+
+[node name="Label" type="Label" parent="." unique_id=1948461408]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -494.0
+offset_top = -268.0
+offset_right = 506.0
+offset_bottom = 232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Hello! 
+Upon auscultation, your patient has audible crackles in the main bronchus. Upon further assessment, it’s been determined that tracheostomy suctioning has been indicated. For the purpose of this Virtual Simulation Game (shortened to VSG), your suctioning equipment has been set up, your sterile gloves have been applied, and your sterile field has been established. You will be assessed on your technique performing each pass for tracheostomy suctioning. "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="BeginButton" type="Button" parent="." unique_id=84796851]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -162.0
+offset_right = 106.0
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "BEGIN"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=125996453]
+layout_mode = 0
+offset_left = 86.99999
+offset_top = 474.0
+offset_right = 2457.0
+offset_bottom = 2213.9995
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_0a7ni")
+
+[connection signal="pressed" from="BeginButton" to="." method="_on_begin_button_pressed"]

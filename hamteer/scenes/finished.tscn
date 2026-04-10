@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://crgh7d6b5fecm"]
+
+[ext_resource type="Script" path="res://scenes/finished.gd" id="1_ebm4h"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="2_mxvkr"]
+[ext_resource type="Texture2D" uid="uid://ba4akad34u6e2" path="res://Assets/hamter.png" id="3_rdcwp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_opmk7"]
+atlas = ExtResource("2_mxvkr")
+region = Rect2(255.25919, 188.48907, 195.80667, 132.77155)
+
+[node name="Finished" type="CanvasLayer" unique_id=1093006673]
+script = ExtResource("1_ebm4h")
+
+[node name="Control" type="Control" parent="." unique_id=735927804]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Control" unique_id=585215206]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect3" type="TextureRect" parent="Control" unique_id=1964783513]
+layout_mode = 0
+offset_top = -27.0
+offset_right = 1159.0
+offset_bottom = 633.0
+texture = SubResource("AtlasTexture_opmk7")
+
+[node name="TextureRect4" type="TextureRect" parent="Control" unique_id=1356896991]
+layout_mode = 0
+offset_left = 1245.0
+offset_top = 348.0
+offset_right = 5984.9985
+offset_bottom = 3847.9995
+rotation = -3.1344836
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rdcwp")
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1853999973]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4745098, 0.4745098, 0.4745098, 1)
+
+[node name="OxLabel" type="Label" parent="Control" unique_id=1439094277]
+layout_mode = 1
+offset_left = 79.0
+offset_top = 53.0
+offset_right = 280.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 32
+text = "Huzah!"
+
+[node name="SterileLabel" type="Label" parent="Control" unique_id=2123814673]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 79.0
+offset_top = -40.0
+offset_right = 119.0
+offset_bottom = 5.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+
+[node name="SuctionLabel" type="Label" parent="Control" unique_id=314455449]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 77.0
+offset_top = -174.0
+offset_right = 1077.0
+offset_bottom = -129.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+autowrap_mode = 2

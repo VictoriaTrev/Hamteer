@@ -6,6 +6,7 @@ extends Node2D
 @onready var too_short_timer: Timer = $TooShortTimer
 @onready var coughing_audio: AudioStreamPlayer = $CoughingAudio
 @onready var suction: Sprite2D = $Suction
+@onready var hand_on_pipe: Sprite2D = $HandOnPipe
 
 signal removed_tube
 signal patient_hurt
@@ -63,6 +64,8 @@ func _process(delta: float) -> void:
 					print("Starting Left")
 				between_button_press_timer.start()
 			elif Input.is_action_just_pressed("twisit_left"):
+				hand_on_pipe.rotate(deg_to_rad(-20))
+
 				if is_right:
 					is_right = false
 					is_left = true
@@ -76,6 +79,7 @@ func _process(delta: float) -> void:
 					print("Hurting patient")
 					GlobalVariable.suction_properly = false
 			elif Input.is_action_just_pressed("twist_right"):
+				hand_on_pipe.rotate(deg_to_rad(20))
 				if is_left:
 					is_left = false
 					is_right = true

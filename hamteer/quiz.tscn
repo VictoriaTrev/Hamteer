@@ -105,6 +105,7 @@ offset_right = 469.0
 offset_bottom = 353.0
 theme_override_font_sizes/font_size = 32
 text = "Upon auscultation of crackle"
+autowrap_mode = 2
 
 [node name="Wrong3" type="Button" parent="Q2" unique_id=581852800]
 custom_minimum_size = Vector2(450, 150)
@@ -115,6 +116,7 @@ offset_right = 1086.0
 offset_bottom = 451.0
 theme_override_font_sizes/font_size = 32
 text = "Upon cessation of Rhonchi"
+autowrap_mode = 2
 
 [node name="Right" type="Button" parent="Q2" unique_id=288338544]
 custom_minimum_size = Vector2(450, 150)
@@ -125,6 +127,7 @@ offset_right = 1095.0
 offset_bottom = 625.0
 theme_override_font_sizes/font_size = 32
 text = "When resistance is met"
+autowrap_mode = 2
 
 [node name="Wrong2" type="Button" parent="Q2" unique_id=1380187294]
 custom_minimum_size = Vector2(450, 150)
@@ -135,6 +138,7 @@ offset_right = 482.0
 offset_bottom = 622.0
 theme_override_font_sizes/font_size = 32
 text = "In the presence of dull vibrations upon percussion"
+autowrap_mode = 2
 
 [node name="Q3" type="Control" parent="." unique_id=552996521]
 visible = false
@@ -175,22 +179,24 @@ autowrap_mode = 2
 [node name="Wrong" type="Button" parent="Q3" unique_id=1367224526]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 3.0
-offset_top = 300.0
-offset_right = 469.0
-offset_bottom = 353.0
+offset_left = 22.0
+offset_top = 266.0
+offset_right = 488.0
+offset_bottom = 454.0
 theme_override_font_sizes/font_size = 32
 text = "Call the surgeon for an immediate discontinue for suspicion of a fistula formation. "
+autowrap_mode = 2
 
 [node name="Wrong3" type="Button" parent="Q3" unique_id=2032081865]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 620.0
-offset_top = 301.0
-offset_right = 1086.0
-offset_bottom = 451.0
+offset_left = 611.0
+offset_top = 265.0
+offset_right = 1077.0
+offset_bottom = 415.0
 theme_override_font_sizes/font_size = 32
 text = "Administer the patient’s prescribed diphenhydramine"
+autowrap_mode = 2
 
 [node name="Wrong2" type="Button" parent="Q3" unique_id=129761563]
 custom_minimum_size = Vector2(450, 150)
@@ -201,6 +207,7 @@ offset_right = 482.0
 offset_bottom = 622.0
 theme_override_font_sizes/font_size = 32
 text = "Collect a culture of the sputum to determine the risk of infection"
+autowrap_mode = 2
 
 [node name="Right" type="Button" parent="Q3" unique_id=966707413]
 custom_minimum_size = Vector2(450, 150)
@@ -211,6 +218,7 @@ offset_right = 1095.0
 offset_bottom = 625.0
 theme_override_font_sizes/font_size = 32
 text = "This is a normal appearance of a stoma, proceed with the procedure."
+autowrap_mode = 2
 
 [node name="Results" type="Control" parent="." unique_id=573974686]
 visible = false

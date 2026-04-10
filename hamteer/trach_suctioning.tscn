@@ -14,6 +14,7 @@ _data = {
 point_count = 5
 
 [node name="TrachSuctioning" type="Node2D" unique_id=1823721548]
+rotation = -6.2831855
 script = ExtResource("1_7vslf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1081352302]
@@ -45,7 +46,7 @@ scale = Vector2(0.06780925, 0.061861303)
 texture = ExtResource("3_j4qbs")
 
 [node name="MucusAmount" type="ProgressBar" parent="." unique_id=1452900593]
-modulate = Color(0.10240673, 0.8096158, 0.8055005, 1)
+modulate = Color(0.507439, 0.5636719, 0.17795905, 1)
 texture_filter = 2
 offset_left = 31.000004
 offset_top = 29.0
@@ -81,6 +82,7 @@ stream = ExtResource("5_j4qbs")
 
 [node name="HandOnPipe" type="Sprite2D" parent="." unique_id=2083634897]
 position = Vector2(824, 416)
+rotation = -0.3944444
 scale = Vector2(3.109375, 3.109375)
 texture = ExtResource("3_7mdem")
 region_enabled = true

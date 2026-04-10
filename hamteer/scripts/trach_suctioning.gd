@@ -8,6 +8,7 @@ extends Node2D
 signal removed_tube
 signal patient_hurt
 signal game_over
+signal procedure_started
 
 @export var speed = .006;
 var mucus_level
@@ -19,6 +20,7 @@ var is_inserted_correctly: bool = false
 var is_left: bool = false
 var is_right: bool = false
 var button_timed_out:= false
+var procedure_begin:= false
 
 var patient_pain_level := 0 :
 	set(value):
@@ -76,6 +78,8 @@ func _process(delta: float) -> void:
 			
 	if Input.is_action_pressed("inserting_tube") or Input.is_action_pressed("removing_tube"):
 		if Input.is_action_pressed("inserting_tube"): 
+			if !procedure_begin:
+				procedure_started.emit()
 			if is_suctioning:
 				patient_hurt.emit()
 			visual_insertion.move_tube(speed)
@@ -106,6 +110,7 @@ func _on_too_short_timer_timeout() -> void:
 	print("Time left: ", how_long_sucking.time_left)
 	
 func _on_removed_tube() -> void:
+	GlobalVariable.mucus_amount = mucus_level
 	if mucus_level != 0:
 		print("There is mucus left!")
 	else:

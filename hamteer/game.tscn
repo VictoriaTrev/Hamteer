@@ -1,7 +1,20 @@
 [gd_scene format=3 uid="uid://cfnsxfbjq1crp"]
 
 [ext_resource type="PackedScene" uid="uid://m3tdsuxugy2c" path="res://trach_suctioning.tscn" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://cxewu2qtnwury" path="res://scripts/game.gd" id="1_e2o6t"]
 
 [node name="Game" type="CanvasLayer" unique_id=1531683821]
+script = ExtResource("1_e2o6t")
 
 [node name="TrachSuctioning" parent="." unique_id=1823721548 instance=ExtResource("1_80nbo")]
+
+[node name="FinishGameButton" type="Button" parent="." unique_id=871372516]
+visible = false
+offset_left = 1066.0
+offset_top = 569.0
+offset_right = 1120.0
+offset_bottom = 600.0
+text = "Finish"
+
+[connection signal="removed_tube" from="TrachSuctioning" to="." method="_on_trach_suctioning_removed_tube"]
+[connection signal="pressed" from="FinishGameButton" to="." method="_on_finish_game_pressed"]

@@ -8,3 +8,4 @@ enum area_of_lung {
 }
 
 var mucus_cleaned = false
+var mucus_amount

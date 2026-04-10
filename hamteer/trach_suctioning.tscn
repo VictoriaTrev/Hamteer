@@ -97,6 +97,14 @@ vframes = 6
 frame = 8
 region_rect = Rect2(128, 0, 64, 64)
 
+[node name="Label" type="Label" parent="." unique_id=273044257]
+offset_left = 30.999937
+offset_top = 361.0
+offset_right = 116.99994
+offset_bottom = 384.0
+theme_override_colors/font_color = Color(0.072842635, 0.072842635, 0.072842635, 1)
+text = "Mucus Left"
+
 [connection signal="patient_hurt" from="." to="." method="_on_patient_hurt"]
 [connection signal="removed_tube" from="." to="." method="_on_removed_tube"]
 [connection signal="timeout" from="HowLongSucking" to="." method="_on_how_long_sucking_timeout"]

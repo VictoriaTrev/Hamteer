@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cfnsxfbjq1crp"]
+
+[ext_resource type="PackedScene" uid="uid://m3tdsuxugy2c" path="res://trach_suctioning.tscn" id="1_80nbo"]
+
+[node name="Game" type="CanvasLayer" unique_id=1531683821]
+
+[node name="TrachSuctioning" parent="." unique_id=1823721548 instance=ExtResource("1_80nbo")]

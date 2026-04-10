@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://m3tdsuxugy2c"]
+
+[ext_resource type="Script" uid="uid://biigwvi1ii3ra" path="res://scripts/trach_suctioning.gd" id="1_7vslf"]
+[ext_resource type="Script" uid="uid://021qysjg3eed" path="res://scripts/visual_insertion.gd" id="2_7mdem"]
+[ext_resource type="Texture2D" uid="uid://d1fulyoxxgg0y" path="res://icon.svg" id="3_j4qbs"]
+
+[sub_resource type="Curve2D" id="Curve2D_g5nom"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1023, 46, 0, 0, 0, 0, 1023, 287)
+}
+point_count = 2
+
+[node name="TrachSuctioning" type="Node2D" unique_id=1823721548]
+script = ExtResource("1_7vslf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1119308965]
+offset_right = 1154.0
+offset_bottom = 644.0
+color = Color(0.6955032, 0.6955031, 0.6955031, 1)
+
+[node name="VisualInsertion" type="Node" parent="." unique_id=1193466631]
+script = ExtResource("2_7mdem")
+
+[node name="Sprite2D" type="Sprite2D" parent="VisualInsertion" unique_id=1062436571]
+modulate = Color(1, 1, 1, 0.6392157)
+position = Vector2(1024.3291, 171.15573)
+scale = Vector2(-1.6601021, 2.3120358)
+texture = ExtResource("3_j4qbs")
+
+[node name="WhereTube" type="Path2D" parent="VisualInsertion" unique_id=192230063]
+curve = SubResource("Curve2D_g5nom")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="VisualInsertion/WhereTube" unique_id=1450380240]
+position = Vector2(1023, 46)
+rotation = 1.5707964
+loop = false
+
+[node name="Sprite2D" type="Sprite2D" parent="VisualInsertion/WhereTube/PathFollow2D" unique_id=1355926519]
+modulate = Color(18.892157, 0, 0, 1)
+scale = Vector2(0.16193186, 0.14772786)
+texture = ExtResource("3_j4qbs")
+
+[node name="MucusAmount" type="ProgressBar" parent="." unique_id=1452900593]
+modulate = Color(0.10240673, 0.8096158, 0.8055005, 1)
+offset_left = 31.000004
+offset_top = 29.0
+offset_right = 35.000004
+offset_bottom = 56.0
+scale = Vector2(22.417147, 12.094006)
+max_value = 90.0
+value = 90.0
+fill_mode = 3
+show_percentage = false
+
+[node name="HowLongSucking" type="Timer" parent="." unique_id=1011112366]
+wait_time = 15.0
+
+[node name="BetweenButtonPressTimer" type="Timer" parent="." unique_id=1044635906]
+one_shot = true
+
+[node name="TooShortTimer" type="Timer" parent="." unique_id=568444183]
+wait_time = 4.0
+one_shot = true
+
+[node name="TimeOutLabel" type="Label" parent="." unique_id=1086838376]
+visible = false
+offset_left = 354.0
+offset_top = 234.0
+offset_right = 430.0
+offset_bottom = 257.0
+scale = Vector2(6.3153124, 6.3153124)
+text = "TIMEOUT!"
+
+[connection signal="patient_hurt" from="." to="." method="_on_patient_hurt"]
+[connection signal="removed_tube" from="." to="." method="_on_removed_tube"]
+[connection signal="timeout" from="HowLongSucking" to="." method="_on_how_long_sucking_timeout"]
+[connection signal="timeout" from="BetweenButtonPressTimer" to="." method="_on_between_button_press_timer_timeout"]
+[connection signal="timeout" from="TooShortTimer" to="." method="_on_too_short_timer_timeout"]

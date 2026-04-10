@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://cyee6ur7clskt"]
 
-[ext_resource type="Script" uid="uid://bdwc8e1qye8dt" path="res://intro.gd" id="1_s2ta7"]
+[ext_resource type="Script" path="res://intro.gd" id="1_s2ta7"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="2_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://bklmrvdqr28v2" path="res://Assets/Hamteer.png" id="3_0a7ni"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y72e6"]
+atlas = ExtResource("2_7a8ye")
+region = Rect2(255.66087, 188.1951, 194.83168, 131.75308)
 
 [node name="Intro" type="Control" unique_id=1602940662]
 layout_mode = 3
@@ -11,14 +17,29 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s2ta7")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=271575957]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1822100074]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.38738903, 0.38738897, 0.38738897, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1452017396]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_y72e6")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=447787346]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 455.0
+offset_right = 3097.9998
+offset_bottom = 2604.9995
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_0a7ni")
 
 [node name="Label" type="Label" parent="." unique_id=1948461408]
 custom_minimum_size = Vector2(1000, 500)
@@ -34,8 +55,11 @@ offset_right = 500.0
 offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "Hello! Upon auscultation, your patient has audible crackles in the main bronchus. Upon further assessment, it’s been determined that tracheostomy suctioning has been indicated. For the purpose of this Virtual Simulation Game (shortened to VSG), your suctioning equipment has been set up, your sterile gloves have been applied, and your sterile field has been established. You will be assessed on your technique performing each pass for tracheostomy suctioning. "
+text = "Hello! 
+Upon auscultation, your patient has audible crackles in the main bronchus. Upon further assessment, it’s been determined that tracheostomy suctioning has been indicated. For the purpose of this Virtual Simulation Game (shortened to VSG), your suctioning equipment has been set up, your sterile gloves have been applied, and your sterile field has been established. You will be assessed on your technique performing each pass for tracheostomy suctioning. "
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="BeginButton" type="Button" parent="." unique_id=84796851]
@@ -45,10 +69,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -101.0
-offset_top = -132.0
-offset_right = 101.0
-offset_bottom = -36.0
+offset_left = -109.0
+offset_top = -143.0
+offset_right = 93.0
+offset_bottom = -47.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 64

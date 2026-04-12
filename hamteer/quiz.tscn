@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://cmm0n42fcy0wk"]
 
-[ext_resource type="Script" uid="uid://cfeol1vft0rns" path="res://quiz.gd" id="1_kninm"]
+[ext_resource type="Script" path="res://quiz.gd" id="1_kninm"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="2_i0i4q"]
+[ext_resource type="Texture2D" uid="uid://bklmrvdqr28v2" path="res://Assets/Hamteer.png" id="3_rmnlm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngcn3"]
+atlas = ExtResource("2_i0i4q")
+region = Rect2(255.66087, 188.1951, 194.83168, 131.75308)
 
 [node name="Quiz1" type="CanvasLayer" unique_id=2056608662]
 script = ExtResource("1_kninm")
@@ -20,22 +26,41 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Q1" unique_id=305637317]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_ngcn3")
+
+[node name="TextureRect2" type="TextureRect" parent="Q1" unique_id=871612697]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 483.0
+offset_right = 2305.9998
+offset_bottom = 2012.9995
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rmnlm")
 
 [node name="Question" type="Label" parent="Q1" unique_id=1716942565]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 413.0
+offset_top = 76.0
+offset_right = 766.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
-text = "Question 1:"
+text = "Question 1"
 
 [node name="Question2" type="Label" parent="Q1" unique_id=1996955312]
 custom_minimum_size = Vector2(1000, 0)
 layout_mode = 0
-offset_left = 1.0
-offset_top = 88.0
-offset_right = 1001.0
-offset_bottom = 133.0
+offset_left = 152.0
+offset_top = 206.0
+offset_right = 1152.0
+offset_bottom = 251.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "True or False: Suctioning applied removal and insertion."
 autowrap_mode = 2
@@ -43,20 +68,20 @@ autowrap_mode = 2
 [node name="Wrong2" type="Button" parent="Q1" unique_id=1876075942]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 48.0
-offset_top = 328.0
-offset_right = 514.0
-offset_bottom = 478.0
+offset_left = 95.0
+offset_top = 314.0
+offset_right = 561.0
+offset_bottom = 464.0
 theme_override_font_sizes/font_size = 32
 text = "TRUE"
 
 [node name="Right" type="Button" parent="Q1" unique_id=1902941638]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 590.0
-offset_top = 331.0
-offset_right = 1056.0
-offset_bottom = 481.0
+offset_left = 611.0
+offset_top = 319.0
+offset_right = 1077.0
+offset_bottom = 469.0
 theme_override_font_sizes/font_size = 32
 text = "FALSE"
 
@@ -69,29 +94,49 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="Q2" unique_id=661989349]
+[node name="ColorRect" type="ColorRect" parent="Q2" unique_id=1891788746]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Q2" unique_id=894353588]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_ngcn3")
+
+[node name="TextureRect2" type="TextureRect" parent="Q2" unique_id=88142446]
+layout_mode = 0
+offset_left = 948.0
+offset_top = 49.000015
+offset_right = 2748.0
+offset_bottom = 1249.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rmnlm")
+flip_h = true
 
 [node name="Question" type="Label" parent="Q2" unique_id=1872677763]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 406.0
+offset_top = 61.0
+offset_right = 759.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
-text = "Question 2:"
+text = "Question 2"
 
 [node name="Question2" type="Label" parent="Q2" unique_id=619606502]
 custom_minimum_size = Vector2(1000, 0)
 layout_mode = 0
-offset_left = 1.0
-offset_top = 88.0
-offset_right = 1001.0
-offset_bottom = 133.0
+offset_left = 109.0
+offset_top = 166.0
+offset_right = 1109.0
+offset_bottom = 211.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "When you do know you’ve inserted the catheter far enough?"
 autowrap_mode = 2
@@ -99,10 +144,10 @@ autowrap_mode = 2
 [node name="Wrong" type="Button" parent="Q2" unique_id=95798165]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 3.0
-offset_top = 300.0
-offset_right = 469.0
-offset_bottom = 353.0
+offset_left = 78.0
+offset_top = 243.0
+offset_right = 544.0
+offset_bottom = 393.0
 theme_override_font_sizes/font_size = 32
 text = "Upon auscultation of crackle"
 autowrap_mode = 2
@@ -110,10 +155,10 @@ autowrap_mode = 2
 [node name="Wrong3" type="Button" parent="Q2" unique_id=581852800]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 620.0
-offset_top = 301.0
-offset_right = 1086.0
-offset_bottom = 451.0
+offset_left = 601.0
+offset_top = 244.0
+offset_right = 1067.0
+offset_bottom = 394.0
 theme_override_font_sizes/font_size = 32
 text = "Upon cessation of Rhonchi"
 autowrap_mode = 2
@@ -121,10 +166,10 @@ autowrap_mode = 2
 [node name="Right" type="Button" parent="Q2" unique_id=288338544]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 629.0
-offset_top = 475.0
-offset_right = 1095.0
-offset_bottom = 625.0
+offset_left = 603.0
+offset_top = 423.0
+offset_right = 1069.0
+offset_bottom = 573.0
 theme_override_font_sizes/font_size = 32
 text = "When resistance is met"
 autowrap_mode = 2
@@ -132,10 +177,10 @@ autowrap_mode = 2
 [node name="Wrong2" type="Button" parent="Q2" unique_id=1380187294]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 16.0
-offset_top = 472.0
-offset_right = 482.0
-offset_bottom = 622.0
+offset_left = 75.0
+offset_top = 418.0
+offset_right = 541.0
+offset_bottom = 568.0
 theme_override_font_sizes/font_size = 32
 text = "In the presence of dull vibrations upon percussion"
 autowrap_mode = 2
@@ -149,29 +194,48 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="Q3" unique_id=701317317]
+[node name="ColorRect2" type="ColorRect" parent="Q3" unique_id=1491443462]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.4487121, 0.4487121, 0.4487121, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Q3" unique_id=223752691]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_ngcn3")
+
+[node name="TextureRect2" type="TextureRect" parent="Q3" unique_id=727882265]
+layout_mode = 0
+offset_left = -54.999992
+offset_top = 85.99999
+offset_right = 1745.0
+offset_bottom = 1286.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rmnlm")
 
 [node name="Question" type="Label" parent="Q3" unique_id=937417909]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 365.0
+offset_top = 57.0
+offset_right = 718.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
-text = "Question 3:"
+text = "Question 3"
 
 [node name="Question2" type="Label" parent="Q3" unique_id=240084745]
 custom_minimum_size = Vector2(1000, 0)
 layout_mode = 0
-offset_left = 1.0
-offset_top = 88.0
-offset_right = 1001.0
-offset_bottom = 133.0
+offset_left = 95.0
+offset_top = 130.0
+offset_right = 1095.0
+offset_bottom = 271.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Before suctioning the tracheostomy, your assessment reveals the stoma to be pink with a slightly wet appearance. What is the priority nursing action?"
 autowrap_mode = 2
@@ -179,10 +243,10 @@ autowrap_mode = 2
 [node name="Wrong" type="Button" parent="Q3" unique_id=1367224526]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 22.0
-offset_top = 266.0
-offset_right = 488.0
-offset_bottom = 454.0
+offset_left = 95.0
+offset_top = 268.0
+offset_right = 561.0
+offset_bottom = 456.0
 theme_override_font_sizes/font_size = 32
 text = "Call the surgeon for an immediate discontinue for suspicion of a fistula formation. "
 autowrap_mode = 2
@@ -190,10 +254,10 @@ autowrap_mode = 2
 [node name="Wrong3" type="Button" parent="Q3" unique_id=2032081865]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 611.0
-offset_top = 265.0
-offset_right = 1077.0
-offset_bottom = 415.0
+offset_left = 594.0
+offset_top = 284.0
+offset_right = 1060.0
+offset_bottom = 434.0
 theme_override_font_sizes/font_size = 32
 text = "Administer the patient’s prescribed diphenhydramine"
 autowrap_mode = 2
@@ -201,10 +265,10 @@ autowrap_mode = 2
 [node name="Wrong2" type="Button" parent="Q3" unique_id=129761563]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 16.0
-offset_top = 472.0
-offset_right = 482.0
-offset_bottom = 622.0
+offset_left = 96.0
+offset_top = 460.0
+offset_right = 562.0
+offset_bottom = 610.0
 theme_override_font_sizes/font_size = 32
 text = "Collect a culture of the sputum to determine the risk of infection"
 autowrap_mode = 2
@@ -212,10 +276,10 @@ autowrap_mode = 2
 [node name="Right" type="Button" parent="Q3" unique_id=966707413]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 0
-offset_left = 629.0
-offset_top = 475.0
-offset_right = 1095.0
-offset_bottom = 625.0
+offset_left = 594.0
+offset_top = 458.0
+offset_right = 1060.0
+offset_bottom = 608.0
 theme_override_font_sizes/font_size = 32
 text = "This is a normal appearance of a stoma, proceed with the procedure."
 autowrap_mode = 2
@@ -229,6 +293,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ColorRect" type="ColorRect" parent="Results" unique_id=1652869054]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Results" unique_id=793218782]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_ngcn3")
+
+[node name="TextureRect2" type="TextureRect" parent="Results" unique_id=1747965497]
+layout_mode = 0
+offset_left = 121.99999
+offset_top = 478.0
+offset_right = 2371.9998
+offset_bottom = 2007.9995
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rmnlm")
+
 [node name="Label" type="Label" parent="Results" unique_id=954475013]
 custom_minimum_size = Vector2(1000, 500)
 layout_mode = 1
@@ -237,12 +325,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -500.0
-offset_top = -250.0
-offset_right = 500.0
-offset_bottom = 250.0
+offset_left = -493.0
+offset_top = -238.0
+offset_right = 507.0
+offset_bottom = 262.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Question 1: Suctioning is only applied upon removal of the catheter because of the risk of trauma to the bronchus
 Question 2: When resistance is met of the patient presents with profuse coughing, this indicates that the catheter has reached the Corina and that advancing any further may cause trauma to the lobes of the lungs
@@ -256,10 +345,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -150.0
-offset_top = -91.0
-offset_right = 150.0
-offset_bottom = -38.0
+offset_left = -155.0
+offset_top = -126.0
+offset_right = 145.0
+offset_bottom = -73.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 32

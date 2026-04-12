@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://crgh7d6b5fecm"]
 
-[ext_resource type="Script" uid="uid://ce03e1gel1fys" path="res://scenes/finished.gd" id="1_ebm4h"]
+[ext_resource type="Script" path="res://scenes/finished.gd" id="1_ebm4h"]
+[ext_resource type="Texture2D" uid="uid://csvtbbaw0xvlw" path="res://Assets/handAssets.png" id="2_mxvkr"]
+[ext_resource type="Texture2D" uid="uid://bklmrvdqr28v2" path="res://Assets/Hamteer.png" id="3_rdcwp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_opmk7"]
+atlas = ExtResource("2_mxvkr")
+region = Rect2(255.66087, 188.1951, 194.83168, 131.75308)
 
 [node name="Finished" type="CanvasLayer" unique_id=1093006673]
 script = ExtResource("1_ebm4h")
@@ -13,19 +19,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1853999973]
+[node name="ColorRect2" type="ColorRect" parent="Control" unique_id=792749967]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.4745098, 0.4745098, 0.4745098, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=854424822]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = SubResource("AtlasTexture_opmk7")
+
+[node name="TextureRect2" type="TextureRect" parent="Control" unique_id=1351534271]
+layout_mode = 0
+offset_left = 1258.9999
+offset_top = 275.0
+offset_right = 5118.9995
+offset_bottom = 2874.9993
+rotation = 3.1347241
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_rdcwp")
 
 [node name="OxLabel" type="Label" parent="Control" unique_id=1439094277]
 layout_mode = 1
-offset_right = 62.0
-offset_bottom = 23.0
+offset_left = 90.0
+offset_top = 99.0
+offset_right = 197.0
+offset_bottom = 144.0
 theme_override_font_sizes/font_size = 32
 text = "Huzah!"
 
@@ -34,9 +58,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 40.0
-offset_bottom = 11.5
+offset_left = 94.0
+offset_top = -21.0
+offset_right = 134.0
+offset_bottom = 24.0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 
@@ -46,10 +71,10 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = -94.0
-offset_right = 44.0
-offset_bottom = -49.0
+offset_left = 94.0
+offset_top = -102.0
+offset_right = 1094.0
+offset_bottom = -57.0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 32
 autowrap_mode = 2
